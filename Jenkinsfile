@@ -16,8 +16,8 @@ pipeline {
         }
         stage('docker push') {
             steps {
-                ssh "docker login -u nagireddynandyala -p xxxxx"
-                ssh "docker push nagireddynandyala/hiring:0.0.3"
+                sh "docker login -u nagireddynandyala -p xxxxx"
+                sh "docker push nagireddynandyala/hiring:0.0.3"
             }
         }
     }
